@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">CodeTestWheelGame</string>
+    <string name="main_screen_title">Wheel Game</string>
+    <string name="game_screen_title">Spin the Wheel</string>
+    <string name="spin_the_wheel">Spin the Wheel</string>
+    <string name="spin">Spin!</string>
+</resources>
