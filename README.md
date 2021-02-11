@@ -1,10 +1,26 @@
 # JobInterviewRelatedProjects
 
 
-Spin the Wheel Game
+App name: Spin the Wheel Game
+
+
+
+Special Facts about the Development:
+- Full codebase developed using Kotlin
+- Followed MVVM architecture design pattern
+- Hilt Dependency Injection
+- API call using Retrofit
+- Implemented View Binding for all the Activities and Fragments
+- Added Timber for easier Logging for Debug and Release level
+- Clean Project/Package Structure
+
+
+
 
 Overview
-Create a simple wheel spinning Android app in kotlin. There will be a total of 2 screens - main screen and the game screen. The MVP demo of this task is attached at the end of this document.
+Create a simple wheel spinning Android app in kotlin. There will be a total of 2 screens - 
+- main screen and 
+- the game screen. 
 
 Requirements
 Main screen: This screen will have at least 1 button that will go to the game screen
@@ -28,10 +44,6 @@ Wheel item darker background: #040D14
 Wheel item lighter background: #141A1E 
 Button pink color: #FDAEB6
 
-Submission & Assessment
-Provide a public github link to your code base
-Code quality
-UI implementation
 
 
 API Response Sample
@@ -87,11 +99,3 @@ API Response Sample
 ]
 
 
-Technology Used or Special Facts about the Development:
-- Full codebase developed using Kotlin
-- Followed MVVM architecture design pattern
-- Hilt Dependency Injection
-- API call using Retrofit
-- Implemented View Binding for all the activities and Fragments
-- Added Timber for easier Logging for Debug and Release level
-- Clean Project/Package Structure
