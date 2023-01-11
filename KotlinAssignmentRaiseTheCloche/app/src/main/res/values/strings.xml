@@ -1,4 +1,5 @@
 <resources>
     <string name="app_name">KotlinAssignmentRaiseTheCloche</string>
     <string name="calculate_bill">Calculate Bill</string>
+    <string name="welcome_to_raise_the_cloche_nrestaurant">Welcome to Raise the Cloche\nRestaurant</string>
 </resources>
