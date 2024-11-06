@@ -5,7 +5,7 @@ class SortingArray(
 ) {
     fun sortAnArray(): IntArray{
         var temp = 0
-        for (firstIndex in 0..givenArray.size-2)
+        for (firstIndex in 0 until givenArray.size-1)
             for (secondIndex in firstIndex+1 until givenArray.size ){
               if(givenArray[firstIndex]> givenArray[secondIndex])
               {

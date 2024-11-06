@@ -1,37 +1,23 @@
 package com.ksu.problemsolving
 
-class LongestCommonPrefix(private val givenArray:Array<String>) {
 
+fun main() {
+    val strings1 = arrayOf("flower", "flow", "flight")
+    println("Longest common prefix: ${longestCommonPrefix(strings1)}")
+}
 
+fun longestCommonPrefix(strings: Array<String>): String {
+    if (strings.isEmpty()) return ""
 
-    fun getLongestCommonPrefix(): String{
-        // if emtpy array return empty result
-        if (givenArray.isEmpty()) return ""
+    var prefix = strings[0]
 
-        val giveArraySize = givenArray.size
-        var resultingString = ""
-        var matchedPrefixCount: Int
-        var currentIndex = 0
-
-        initialLoop@
-        for (aChar in givenArray[0]){
-            matchedPrefixCount = 0
-            for (aString in givenArray){
-                if(aString.isEmpty()) {
-                    return ""
-                }
-                if(isCharMatched(aString,currentIndex, aChar)) ++matchedPrefixCount
-            }
-            if(matchedPrefixCount == giveArraySize) resultingString += aChar
-            else break@initialLoop
-
-            ++currentIndex
-
+    for (i in 1 until strings.size) {
+        while (strings[i].indexOf(prefix) != 0) {
+            prefix = prefix.substring(0, prefix.length - 1)
+            if (prefix.isEmpty()) return ""
         }
-        return resultingString
+        println("prefix -> $prefix")
     }
 
-    private fun isCharMatched(aString:String, index: Int, aMatchingChar:Char): Boolean{
-        return aString.length>index && aString[index] == aMatchingChar
-    }
+    return prefix
 }

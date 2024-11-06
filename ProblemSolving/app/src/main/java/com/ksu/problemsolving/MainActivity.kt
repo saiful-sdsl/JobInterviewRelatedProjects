@@ -18,15 +18,11 @@ class MainActivity : AppCompatActivity() {
         val mergedArray = MergeTwoArray(givenArray1, givenArray2).mergeTwoArray()
         println("After merging arrays: ${mergedArray.joinToString()}")
 
-        val arrayWithoutDuplicates =
-            RemoveDuplicateElements(mergedArray).removeDuplicates()
-        println("After removing duplicates: ${arrayWithoutDuplicates.joinToString()}")
-
-        val sortedArray = SortingArray(arrayWithoutDuplicates).sortAnArray()
+        val sortedArray = intArrayOf(1,2,3,4,5,6,7)
         println("After sorting: ${sortedArray.joinToString()}")
 
-        val reversedArray = ReverseAnArray(sortedArray).reverse()
-        println("After reversed: ${reversedArray.joinToString()}")
+//        val reversedArray = ReverseAnArray(sortedArray).reverse()
+//        println("After reversed: ${reversedArray.joinToString()}")
 
         val reversedString = StringReverse("sortedArray").reverse()
         println("After reversed sortedArray: $reversedString")
@@ -49,16 +45,9 @@ class MainActivity : AppCompatActivity() {
         ).getEquivalentIntegerNumbers()
         println("Roman to Int results: ${equivalentIntNumber.joinToString()}")
 
-        val arrayOfFindingLongestPrefixString = arrayOf("flower", "flower", "flower")
-        val longestCommonPrefix = LongestCommonPrefix(arrayOfFindingLongestPrefixString).getLongestCommonPrefix()
-        println("Longest common prefix of ${arrayOfFindingLongestPrefixString.joinToString()} is $longestCommonPrefix")
-
-
         val arrayOfFindingValidParenthesis = arrayOf("(){}[]", "[]({}", "{}{}[]()()", "[{()}]")
         val resultOfFindingValidParenthesis = ValidParenthesisChecker(arrayOfFindingValidParenthesis).checkIfValid()
         println("Result of finding common parenthesis ${arrayOfFindingValidParenthesis.joinToString()} is ${resultOfFindingValidParenthesis.joinToString()}")
-
-
 
         val list = ArrayList<SortUsingComparator.Name>()
 

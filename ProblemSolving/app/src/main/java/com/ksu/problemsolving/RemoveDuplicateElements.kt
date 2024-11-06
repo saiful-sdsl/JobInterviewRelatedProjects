@@ -1,9 +1,10 @@
 package com.ksu.problemsolving
 
-class RemoveDuplicateElements(
-    var givenArray: IntArray
-) {
-    fun removeDuplicates(): IntArray{
+
+fun main() {
+    removeDuplicateElementsWithSet(intArrayOf(3,2,4,2,3,2,3,2,4,5,6,7,8))
+}
+    fun removeDuplicates(givenArray: IntArray): IntArray{
         val workingArray = IntArray(givenArray.size)
         var incrementalIndex = 0
         for (item in givenArray){
@@ -20,7 +21,7 @@ class RemoveDuplicateElements(
         return returningArray
     }
 
-    fun removeDuplicateElementsWithArrayList():IntArray{
+    fun removeDuplicateElementsWithArrayList(givenArray: IntArray):IntArray{
         val returningArrayList = arrayListOf<Int>()
 
         for (item in givenArray){
@@ -28,4 +29,15 @@ class RemoveDuplicateElements(
         }
         return returningArrayList.toIntArray()
     }
-}
+
+    fun removeDuplicateElementsWithSet(givenArray: IntArray
+    ):IntArray{
+        val returningList = mutableSetOf<Int>()
+
+        for (item in givenArray){
+            returningList.add(item)
+        }
+        println("given -> ${givenArray.joinToString()}")
+        println("after removing duplicates -> $returningList")
+        return returningList.toIntArray()
+    }
